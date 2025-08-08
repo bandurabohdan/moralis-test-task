@@ -1,0 +1,29 @@
+{
+  "name": "moralis-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "allure:report": "allure generate allure-results --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.0"
+  },
+  "dependencies": {
+    "@moralisweb3/common-evm-utils": "^2.27.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.3",
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0",
+    "moralis": "^2.27.2"
+  }
+}
