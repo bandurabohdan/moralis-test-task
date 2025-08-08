@@ -1,0 +1,144 @@
+getBlock error:  MoralisError [Moralis SDK Core Error]: [C0006] Request failed, Bad Request(400): address with value 'block' is not a valid hex address
+    at RequestController.makeError (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/@moralisweb3/common-core/lib/esm/index.js:1218:20)
+    at RequestController.<anonymous> (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/@moralisweb3/common-core/lib/esm/index.js:1199:38)
+    at step (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/@moralisweb3/common-core/lib/esm/index.js:77:23)
+    at Object.throw (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/@moralisweb3/common-core/lib/esm/index.js:58:53)
+    at rejected (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/@moralisweb3/common-core/lib/esm/index.js:49:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  isMoralisError: true,
+  code: 'C0006',
+  details: {
+    status: 400,
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    }
+  },
+  [cause]: AxiosError: Request failed with status code 400
+      at settle (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/axios/lib/core/settle.js:19:12)
+      at IncomingMessage.handleStreamEnd (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/axios/lib/adapters/http.js:599:11)
+      at IncomingMessage.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21)
+      at Axios.request (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/axios/lib/core/Axios.js:45:41)
+      at processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 20000,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: Infinity,
+      maxBodyLength: Infinity,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'get',
+      url: 'https://deep-index.moralis.io/api/v2.2/block/',
+      params: [Object],
+      allowAbsoluteUrls: true,
+      data: undefined
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'GET /api/v2.2/block/?chain=0x1 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'x-moralis-platform: NodeJS SDK\r\n' +
+        'x-moralis-platform-version: 2.27.2\r\n' +
+        'x-moralis-build-target: node\r\n' +
+        'x-api-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjkzN2M5ZWEyLWJhNDktNDUwOS1iZTNlLWI3ZGFkZGU5NmU4MSIsIm9yZ0lkIjoiNDYzNzA5IiwidXNlcklkIjoiNDc3MDY0IiwidHlwZUlkIjoiNjhmMjU1YjMtN2QyOC00YzExLWFlYzAtN2ZhM2IzN2Q2OTQyIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3NTQ1NTMyNjcsImV4cCI6NDkxMDMxMzI2N30.r89qCkVVJCNUkbd4HCbri9s1xVRDEWVW-EfXnNlKoiw\r\n' +
+        'User-Agent: axios/1.11.0\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: deep-index.moralis.io\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/v2.2/block/?chain=0x1',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'deep-index.moralis.io',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Error: Validation failed
+    at validateOrThrow (file:///home/runner/work/moralis-test-task/moralis-test-task/utils/helpers/json-validator.ts:17:25)
+    at file:///home/runner/work/moralis-test-task/moralis-test-task/tests/regression.spec.ts:94:22
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:304:9
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:289:11
+    at TimeoutManager.withRunnable (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:287:7)
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:302:7
+    at WorkerMain._runTest (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:277:5)
+    at WorkerMain.runTestGroup (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:193:11)
+    at process.<anonymous> (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/common/process.js:65:22) {
+  details: [ { path: '#/type', message: 'must be object' } ],
+  status: 400
+}

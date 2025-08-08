@@ -1,0 +1,45 @@
+tokenGetPrice error:  TypeError: invalid address (argument="address", value="", code=INVALID_ARGUMENT, version=6.15.0)
+    at makeError (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/ethers/src.ts/utils/errors.ts:691:21)
+    at assert (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/ethers/src.ts/utils/errors.ts:719:25)
+    at assertArgument (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/ethers/src.ts/utils/errors.ts:731:5)
+    at Module.getAddress (file:///home/runner/work/moralis-test-task/moralis-test-task/node_modules/ethers/src.ts/address/address.ts:147:5)
+    at baseBody (file:///home/runner/work/moralis-test-task/moralis-test-task/utils/helpers/reqBodyConfig.ts:6:23)
+    at tokenReqBody (file:///home/runner/work/moralis-test-task/moralis-test-task/utils/helpers/reqBodyConfig.ts:16:8)
+    at Token.call (file:///home/runner/work/moralis-test-task/moralis-test-task/API/Modules/Token.ts:33:71)
+    at file:///home/runner/work/moralis-test-task/moralis-test-task/utils/fixtures/apiFixtures.ts:46:37
+    at TestStepInfoImpl._runStepBody (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:449:20)
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/common/testType.js:244:36
+    at raceAgainstDeadline (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright-core/lib/utils/isomorphic/timeoutRunner.js:29:5)
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/common/testType.js:242:61
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
+    at Zone.run (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright-core/lib/server/utils/zones.js:42:36)
+    at TestTypeImpl.step [as _step] (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/common/testType.js:239:73)
+    at Token.getPrice (file:///home/runner/work/moralis-test-task/moralis-test-task/utils/fixtures/apiFixtures.ts:45:25)
+    at file:///home/runner/work/moralis-test-task/moralis-test-task/tests/regression.spec.ts:80:40
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:304:9
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:289:11
+    at TimeoutManager.withRunnable (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:287:7)
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:302:7
+    at WorkerMain._runTest (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:277:5)
+    at WorkerMain.runTestGroup (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:193:11)
+    at process.<anonymous> (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/common/process.js:65:22) {
+  code: 'INVALID_ARGUMENT',
+  argument: 'address',
+  value: '',
+  shortMessage: 'invalid address'
+}
+Error: Validation failed
+    at validateOrThrow (file:///home/runner/work/moralis-test-task/moralis-test-task/utils/helpers/json-validator.ts:17:25)
+    at file:///home/runner/work/moralis-test-task/moralis-test-task/tests/regression.spec.ts:81:22
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:304:9
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:289:11
+    at TimeoutManager.withRunnable (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/testInfo.js:287:7)
+    at /home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:302:7
+    at WorkerMain._runTest (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:277:5)
+    at WorkerMain.runTestGroup (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/worker/workerMain.js:193:11)
+    at process.<anonymous> (/home/runner/work/moralis-test-task/moralis-test-task/node_modules/playwright/lib/common/process.js:65:22) {
+  details: [ { path: '#/type', message: 'must be object' } ],
+  status: 400
+}
